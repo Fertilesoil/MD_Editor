@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ #root {
+  @apply h-full;
+ }
+
+ html, body {
+  @apply h-full;
+  @apply select-none;
+  @apply bg-transparent;
+  @apply font-mono antialiased text-white;
+  @apply overflow-hidden;
+ }
+
+ header {
+  -webkit-app-region: drag;
+ }
+ 
+ button {
+  -webkit-app-region: no-drag;
+ }
+
+ ::-webkit-scrollbar {
+  @apply w-[0.60rem];
+ }
+
+ ::-webkit-scrollbar-thumb {
+  @apply bg-[#7e747473] rounded-sm;
+ }
+
+ ::-webkit-scrollbar-track {
+  @apply bg-transparent mt-8;
+ }
+}
+
+
